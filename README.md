@@ -15,13 +15,14 @@ This project is divided into four parts:
 - Part 3: Visualizing and Analysis on Kibana
 - Part 4: Deploying to EC2 Instance
 
-## Part 1:
+## Part 1 Python Scripting:
 ### Instructions
 After pulling this container, you can use the following command to run the container:
 
 $ docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --page_size=1000 --num_pages=4 --output=results.json
 
-YOUR_APP_KEY is your APP TOKEN for the NYC Open Data API.
+### Arguments
+YOUR_APP_KEY is your [APP TOKEN](https://data.cityofnewyork.us/login?return_to=%2Fprofile%2Fedit%2Fdeveloper_settings) for the NYC Open Data API.
 
 --page_size=your_page_size is the number of rows (of data) on each page. This command line argument is required.
 
