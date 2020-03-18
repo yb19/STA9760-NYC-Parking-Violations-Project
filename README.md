@@ -88,4 +88,4 @@ In this part, you can stand up an instance of Kibana on top of the ElasticSearch
 
 ### Visualizations
 #### 1. Number of Violations by Month
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/yb19/STA9760-NYC-Parking-Violations-Project/tree/master/Part%203/images/lineplot.png "Logo Title Text 1")
