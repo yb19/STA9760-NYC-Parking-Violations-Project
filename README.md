@@ -17,18 +17,22 @@ This project is divided into four parts:
 
 ## Part 1 Python Scripting:
 ### Instructions
-After pulling this container, you can use the following command to run the container:
+After pulling the container, you can use the following command to run the container:
 
 `$ docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --page_size=1000 --num_pages=4 --output=results.json`
 
+You can also run the container on AWS EC2 using:
+
+`$ sudo docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --page_size=1000 --num_pages=4 --output=results.json`
+
 ### Arguments
-YOUR_APP_KEY is your [APP TOKEN](https://data.cityofnewyork.us/login?return_to=%2Fprofile%2Fedit%2Fdeveloper_settings) for the NYC Open Data API.
+**YOUR_APP_KEY** is your [APP TOKEN](https://data.cityofnewyork.us/login?return_to=%2Fprofile%2Fedit%2Fdeveloper_settings) for the NYC Open Data API.
 
---page_size=your_page_size is the number of rows (of data) on each page. This command line argument is required.
+**--page_size=your_page_size** is the number of rows (of data) on each page. This command line argument is required.
 
---num_pages=you_num_pages is the number of pages you want to load. If omitted, the container will continue requesting data until the entirety of the content has been exhausted.
+**--num_pages=you_num_pages** is the number of pages you want to load. If omitted, the container will continue requesting data until the entirety of the content has been exhausted.
 
---output=file_name.file_format is the file that the container will write the data to. If omiited, the container will simply print data to stdout.
+**--output=file_name.file_format** is the file that the container will write the data to. If omiited, the container will simply print data to stdout.
 
 ### Warning:
 If you want to spycify more than one command line argument (i.e., num_pages, output), you should follow the order of arguments specified above.
