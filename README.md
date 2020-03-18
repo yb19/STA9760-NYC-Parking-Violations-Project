@@ -40,3 +40,29 @@ $ sudo docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --pag
 
 ### Warning:
 If you want to spycify more than one command line argument (i.e., num_pages, output), you should follow the order of arguments specified above.
+
+## Part 2 Loading into ElasticSearch:
+### Instructions
+1. After pulling the container, spin up the entire service (bigdata1, Elasticsearch, Kibana) using:
+
+```
+$ docker-compose up -d
+```
+
+2. Download data from NYC Open Data and store it to Elasticsearch using:
+
+```
+docker-compose run -e APP_TOKEN=${YOUR_APP_TOKEN} pyth python main.py --page_size=2 --num_pages=2 --output=result.txt
+```
+
+3. You can view data by typing 'localhost:5601' in your browser or using:
+
+```
+$ curl http://localhost:9200/bigdata1/parkviolates/_search?q=state:NJ&size=1
+```
+
+4. After finishing the whole process, turn off the service using:
+
+```
+$ docker-compose down
+```
