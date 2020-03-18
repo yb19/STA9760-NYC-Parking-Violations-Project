@@ -58,7 +58,7 @@ $ docker-compose up -d
 docker-compose run -e APP_TOKEN=${YOUR_APP_TOKEN} pyth python main.py --page_size=2 --num_pages=2 --output=result.txt
 ```
 
-3. View data by typing "localhost:5601" in your browser or using:
+3. View data by typing 'localhost:5601' in your browser or using:
 
 ```
 $ curl http://localhost:9200/bigdata1/parkviolates/_search?q=state:NJ&size=1
@@ -74,7 +74,7 @@ $ docker-compose down
 In this part, you can stand up an instance of Kibana on top of the ElasticSearch instance to visualize and analyze your dataset so that you can extract insights from dataset.
 
 ### Instructions
-1. After pushing data into Elasticsearch, view data on Kibana by typing "localhost:5601" in your browser.
+1. After pushing data into Elasticsearch, view data on Kibana by typing 'localhost:5601' in your browser.
 
 2. Click "Index Patterns" under Management column on the left.
 
@@ -88,15 +88,23 @@ In this part, you can stand up an instance of Kibana on top of the ElasticSearch
 
 ### Visualizations
 #### 1. Number of Violations by Month
+First, let's look at the number of violations occurred each month since 2018. We can see that there are two spikes in the line plot, i.e., April 2018 and June 2019. We can look into the causes of violations so that we can do some precautions in the future.
+
 ![](Part%203/images/lineplot.png)
 
 #### 2. Top 5 Popular Violations
+Second, let's look at the top five violation types in terms of the total occurrences. It turns out that "No Parking Street Cleaning" type was the most frequent violations.
+
 ![](Part%203/images/pieplot.png)
 
 #### 3. Average Reduction Amount by County
+Third, let's look at average reduction amount for each county in the NYC area. The graph shows that NY county had the highest average reduction amount, and BX county came second.
+
 ![](Part%203/images/barplot.png)
 
 #### 4. Relationship Between Violation Type and Penalty Amount
+Fourth, let's look at the relationship between violation type and average penalty amount. We can see that "Improper Registration" and "No Match Plate/Sticker" had the highest positive correlations with the average penalty amount.
+
 ![](Part%203/images/heatmap.png)
 
 ### Dashboard
