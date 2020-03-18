@@ -19,7 +19,6 @@ def parse_args() -> dict:
 
     opts = {}
     args = sys.argv[1:]
-    print(args)
 
     for arg in args:
         try:
