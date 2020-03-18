@@ -2,7 +2,9 @@
 This is the NYC parking violations analysis project for the Big Data Technology course (STA9760).
 
 ## Description:
-You can use this container to extract the Open Parking and Camera Violations data from NYC Open Data. You can also specify the number of rows (of data) on each page, the number of pages you want to load, and whether to print out the data to stdout or write the data to the file that you speficy.
+First, you can use this container to extract the Open Parking and Camera Violations (OPCV) data from NYC Open Data (https://opendata.cityofnewyork.us/). You can specify the number of rows (of data) on each page, the number of pages you want to load, and whether to print out the data to stdout or write the data to the file that you speficy. 
+
+Second, download the data but also load it into your elasticsearch instance.
 
 ## Instructions:
 After pulling this container, you can use the following command to run the container:
