@@ -89,3 +89,15 @@ In this part, you can stand up an instance of Kibana on top of the ElasticSearch
 ### Visualizations
 #### 1. Number of Violations by Month
 ![](Part%203/images/lineplot.png)
+
+#### 2. Top 5 Popular Violations
+![](Part%203/images/pieplot.png)
+
+#### 3. Average Reduction Amount by County
+![](Part%203/images/barplot.png)
+
+#### 4. Relationship Between Violation Type and Penalty Amount
+![](Part%203/images/heatmap.png)
+
+### Dashboard
+![](Part%203/images/dashboard.png)
