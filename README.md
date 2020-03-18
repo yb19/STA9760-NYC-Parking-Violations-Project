@@ -19,7 +19,7 @@ This project is divided into four parts:
 ### Instructions
 After pulling this container, you can use the following command to run the container:
 
-$ docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --page_size=1000 --num_pages=4 --output=results.json
+'$ docker run -e APP_KEY={YOUR_APP_KEY} -t bigdata1:1.0 python main.py --page_size=1000 --num_pages=4 --output=results.json'
 
 ### Arguments
 YOUR_APP_KEY is your [APP TOKEN](https://data.cityofnewyork.us/login?return_to=%2Fprofile%2Fedit%2Fdeveloper_settings) for the NYC Open Data API.
