@@ -58,7 +58,7 @@ $ docker-compose up -d
 docker-compose run -e APP_TOKEN=${YOUR_APP_TOKEN} pyth python main.py --page_size=2 --num_pages=2 --output=result.txt
 ```
 
-3. View data by typing 'localhost:5601' in your browser or using:
+3. View data by typing "localhost:5601" in your browser or using:
 
 ```
 $ curl http://localhost:9200/bigdata1/parkviolates/_search?q=state:NJ&size=1
@@ -74,7 +74,7 @@ $ docker-compose down
 In this part, you can stand up an instance of Kibana on top of the ElasticSearch instance to visualize and analyze your dataset so that you can extract insights from dataset.
 
 ### Instructions
-1. After pushing data into Elasticsearch, view data on Kibana by typing 'localhost:5601' in your browser.
+1. After pushing data into Elasticsearch, view data on Kibana by typing "localhost:5601" in your browser.
 
 2. Click "Index Patterns" under Management column on the left.
 
@@ -108,4 +108,6 @@ Fourth, let's look at the relationship between violation type and average penalt
 ![](Part%203/images/heatmap.png)
 
 ### Dashboard
+This is the dashboard which aggregates the four plots above.
+
 ![](Part%203/images/dashboard.png)
